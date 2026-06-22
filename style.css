@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.cover-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 850px;
+  background: radial-gradient(circle at 20% 35%, #059b5c 0%, #024731 45%, #01241a 100%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 50px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Typography Grid/Layout */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 10; 
+}
+
+.main-title {
+  flex: 1.2;
+}
+
+.main-title h1 {
+  line-height: 0.95;
+  margin-bottom: 40px;
+}
+
+.serif-text {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 3.4rem;
+  color: #e2f7ed;
+}
+
+.sans-text-green {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+  color: #00e676; 
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #00ba63;
+  line-height: 1.4;
+  max-width: 180px;
+}
+
+.description {
+  flex: 0.8;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #a3d7c2;
+  padding-left: 20px;
+}
+
+.graphic-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.large-circle {
+  width: 700px;
+  height: 700px;
+  right: -250px;
+  bottom: -100px;
+  background: linear-gradient(135deg, #013825 0%, #001f16 100%);
+  opacity: 0.95;
+}
+
+.small-circle {
+  width: 480px;
+  height: 480px;
+  left: -120px;
+  bottom: -140px;
+  background: linear-gradient(135deg, #012a1c 0%, #00140e 100%);
+  box-shadow: -10px -10px 40px rgba(0,0,0,0.4);
+  z-index: 2;
+}
+
+.footer-content {
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #00e676;
+  letter-spacing: -1.5px;
+}
+
+@media (max-width: 500px) {
+  .cover-container {
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 25px;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .serif-text { font-size: 2.6rem; }
+  .sans-text-green { font-size: 2.4rem; }
+  
+  .large-circle {
+    width: 500px;
+    height: 500px;
+    right: -180px;
+  }
+  
+  .small-circle {
+    width: 350px;
+    height: 350px;
+    left: -80px;
+  }
+}

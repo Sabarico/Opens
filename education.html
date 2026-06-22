@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+    body{
+        background-color: #040b14;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 40px;
+    }
+    .section-header{
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 2px;
+color: #fff;
+text-transform: uppercase;
+display: flex;
+align-items: center;
+    }
+    .section-header::after{
+        content: "";
+        width: 120px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.3);
+        margin-left: 15px;
+    }
+    .education-list{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        max-width: 100%;
+        margin-top: 0;
+    }
+    .edu-card{
+        background: #081b33 !important;
+padding: 40px;
+margin-bottom: 0;
+display: flex;
+gap: 25px;
+align-items: flex-start;
+position: relative;
+width: 100%;
+box-sizing: border-box;
+}
+.edu-logo{
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+    margin-right: 25px;
+}
+.edu-logo img{
+    max-width:100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 0;
+}
+.education-title-bar {
+    background-color: transparent; 
+    padding: 20px 0;       
+    margin-bottom: 10px;       
+}
+.edu-logo a {
+    text-decoration: none;
+    border: none;
+}
+.edu-details{
+    flex-grow: 1;
+}
+.edu-details h3{
+    color: #18d26e;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.edu-details.degree{
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.edu-details.degree b{
+color: #fff;
+}
+.edu-details .date{
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+.edu-details .specialization{
+    font-size: 15px;
+}
+.location{
+    font-style: italic;
+            color: #aaa;
+            font-size: 14px;
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+}
+@media (max-width: 768px) {
+            .edu-card {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            .location {
+                position: static;
+                margin-top: 10px;
+            }
+        }
+        .main-header{
+            background: #0b1b2b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin: -40px -40px 20px -40px;
+        }
+        .logo{
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #f5c97a;
+            text-transform: uppercase;
+        }
+        .navbar{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .highlight{
+            color: #00ff88 !important;
+            position: relative;
+        }
+        .highlight::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #f5c97a;
+            bottom: -5px;
+            left: 0;
+        }
+</style>   
+</head>
+    <body>
+        <header class="main-header">
+            <div class="logo">SABARI C</div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="education.html" class="highlight">Education</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="education-title-bar">
+        <div class="section-header">Education</div>
+        </div>
+        <div class="education-list">
+            <div class="edu-card">
+            <div class="edu-logo">
+                <img src="Assets/img/sec-logo-01as.png" alt="College Logo">
+            </div>
+            <div class="edu-details">
+                <h3>Saveetha Engineering College</h3>
+                <p class="degree">B.E - Computer Science Engineering: <b>CGPA: 6.26</b></p>
+                <p class="date">June 2013 - May 2017</p>
+                <p class="specialization"><b>Field of Specialization:</b> Computer Science Engineering.</p>
+            </div>
+            <div class="location">Chennai, Tamilnadu</div>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-logo">
+                <img src="Assets/img/tn_gov_logo.svg.png" alt="School Logo">
+            </div>
+            <div class="edu-details">
+                <h3>Sri Vijay Vidyalaya Matriculation Higher Secondary School</h3>
+                <p class="higher secondary school">HSC : <b>Percentage: 80.6%</b></p>
+                <p class="date">March 2012 - March 2013</p>
+            </div>
+            <div class="location">Dharmapuri, Tamilnadu</div>
+        </div>
+<div class="edu-card">
+    <div class="edu-logo">
+        <img src="Assets/img/tn_gov_logo.svg.png" alt="School Logo">
+</div>
+<div class="edu-details">
+    <h3>Sri Vijay Vidyalaya Matriculation Higher Secondary School</h3>
+    <p class="secondary school">SSLC :<b>Percentage: 78.4</b></p>
+    <p class="date">March 2010 - March 2011</p>
+</div>
+<div class="location">Dharmapuri, Tamilnadu</div>
+    </div>
+    </div>
+    </div>
+    </body>
+</html>

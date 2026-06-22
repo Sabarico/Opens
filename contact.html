@@ -1,0 +1,268 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page Transformation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+body {
+            background-color: #040b14;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0;
+            margin:0;
+        }
+
+        .contact-section h2 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+.contact-header {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .contact-title {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #aaa;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            margin-left: 80px !important;
+            margin-top: 40px;
+            margin-bottom: 20px;
+           
+        }
+        .contact-title::after {
+            content: "";
+            width: 120px;
+            height: 1px;
+            background: #ffffff;
+            margin-left: 15px;
+            opacity: 0.6;
+        }
+        .contact-grid {
+            display: flex!important;
+            flex-direction: row !important;
+            justify-content: flex-start !important;
+            gap: 30px; 
+            flex-wrap: nowrap !important;
+            padding-left: 80px !important;
+            width: 100%;
+        }
+        .contact-info-card {
+            background: #121d2b;
+            padding: 25px 30px;
+            flex: 0 0 380px !important;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .unified-contact-box {
+            background-color: #09121d; 
+            padding: 30px;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 850px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px; 
+        }
+        .unified-card {
+            background-color: #09121d; 
+            padding: 20px;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 900px;
+        }
+        .info-row {
+            display: flex;
+            align-items: center;
+        }
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #121d2b;
+            padding: 30px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            min-width: 300px;
+        }
+
+        .icon-circle {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #2ecc71;
+            font-size: 20px;
+        }
+
+        h3 {
+            color: #2ecc71;
+            margin: 0 0 5px 0;
+        }
+        .social-links {
+        display: flex;
+        gap: 10px;
+    }
+
+        .social-links a {
+            color: white;
+            background: #212431;
+            width: 35px;
+            height: 35px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #12d640;
+            color: #000;
+        }
+.icon-box {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            color: #12d640;
+            font-size: 20px;
+        }
+        .info-content h3 {
+            color: #12d640;
+            font-size: 18px;
+            margin: 0 0 5px 0;
+            font-weight: 600;
+        }
+        .email-link {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .email-address {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+
+        .email-address i {
+            color: #12d640;
+            margin-right: 8px;
+            font-size: 10px;
+        }
+        .header{
+            background: #0b1b2b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+        .logo{
+            font-size: 28px;
+            font-weight: bold;
+            color: #f5c97a;
+        }
+        .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+        }
+        .nav-links li a{
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition:0.3s
+        }
+        .nav-links a:hover{
+color: #12d640;
+        }
+        .nav-links li a.active{
+            color:#12d640;
+            border-bottom: 2px solid #12d640;
+            padding-bottom: 5px;
+        } 
+        .page-content{
+            padding: 40px 80px;
+        }
+       
+    </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">SABARI C</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contact-title">Contact</div>
+
+    <div class="contact-grid">
+        
+        <div class="contact-info-card">
+            <div class="icon-box">
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+            <div class="info-content">
+                <h3>Social Profiles</h3>
+                <div class="social-links">
+                    <a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://www.linkedin.com/in/sabari-c-51b9a01b3/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Sabarico" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-info-card">
+            <div class="icon-box">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="info-content">
+                <h3>Email</h3>
+                <a href="https://mail.google.com/mail/u/2/#inbox?compose=new" class="email-address" target="_blank">
+                    <i class="fa-solid fa-chevron-right"></i> sabarichetty27@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
